@@ -1,0 +1,143 @@
+header {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #0056b3;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.login-button button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.login-button button:hover {
+  background-color: #0056b3;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .search-bar {
+    padding: 5px;
+  }
+
+  .login-button button {
+    padding: 8px 15px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    margin-bottom: 10px;
+  }
+}
+
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+      margin-right: 10px; 
+    }
+  
+    nav {
+      font-family: 'Comic Sans MS', cursive;
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-top: none;
+      z-index: 1000;
+    }
+  
+    nav.nav-open {
+      display: flex;
+    }
+  
+    nav a {
+      padding: 10px 20px;
+    }
+  
+    .search-bar {
+      margin-top: 10px;
+    }
+  }
+  

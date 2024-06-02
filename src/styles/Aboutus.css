@@ -1,0 +1,115 @@
+.about-page {
+  max-width: auto;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url('../assets/bg1.jpg');
+  background-size: cover;
+  background-position: center;
+  object-fit: fill;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.about-content {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 20px;
+}
+
+.our-story,
+.our-mission,
+.our-values,
+.our-services,
+.join-us {
+  margin-top: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.our-story h3,
+.our-mission h3,
+.our-values h3,
+.our-services h3,
+.join-us h3 {
+  font-size: 24px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.our-story p,
+.our-mission p,
+.our-values p,
+.our-services p,
+.join-us p {
+  line-height: 1.6;
+  margin-left: 20px;
+}
+
+.our-values ul,
+.our-services ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 20px;
+}
+
+.our-values li,
+.our-services li {
+  margin-bottom: 10px;
+}
+
+.join-us button {
+  background-color: #007BFF;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+  margin-left: 40%;
+}
+
+.join-us button:hover {
+  background-color: #0056b3;
+}
+
+@media only screen and (max-width: 992px) {
+  .join-us button {
+    font-size: 16px;
+    margin-left: 30%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-page {
+    padding: 10px;
+  }
+
+  .our-story h3,
+  .our-mission h3,
+  .our-values h3,
+  .our-services h3,
+  .join-us h3 {
+    font-size: 20px;
+  }
+
+  .our-story p,
+  .our-mission p,
+  .our-values p,
+  .our-services p,
+  .join-us p {
+    margin-left: 10px;
+  }
+
+  .join-us button {
+    font-size: 16px;
+    margin-left: 30%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .join-us button {
+    font-size: 14px;
+    margin-left: 20%;
+  }
+}
